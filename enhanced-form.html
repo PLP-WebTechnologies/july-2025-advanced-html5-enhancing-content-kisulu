@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    fieldset {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea, button {
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+    }
+    img {
+     width:240px;
+     height: 240px;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #1e4bb8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Content & Forms</h1>
+    <p>Assignment showcasing lists, tables, media, and form validation in HTML5.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Popular Web Technologies</h2>
+    <ul>
+      <li>HTML5
+        <ul>
+          <li>Semantic Elements</li>
+          <li>Forms</li>
+          <li>Media</li>
+        </ul>
+      </li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Comparison of HTML5 Features</h2>
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>Forms</td>
+        <td>Supports multiple input types and validation.</td>
+        <td>&lt;input type="email"&gt;</td>
+      </tr>
+      <tr>
+        <td>Media</td>
+        <td>Embed audio and video natively.</td>
+        <td>&lt;video&gt;, &lt;audio&gt;</td>
+      </tr>
+      <tr>
+        <td>Semantic Tags</td>
+        <td>Improves accessibility and SEO.</td>
+        <td>&lt;article&gt;, &lt;section&gt;</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>HTML5 Media Examples</h2>
+    <img src="Capture2.png" alt="Sample image">
+    <br><br>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <video controls width="500">
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required autocomplete="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+?[0-9]{10,15}$" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select...</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+
+        <label>Subscribe to newsletter?</label>
+        <input type="checkbox" id="newsletter" name="newsletter"> Yes, keep me updated!
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
